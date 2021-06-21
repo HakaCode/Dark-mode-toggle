@@ -1,0 +1,77 @@
+html{
+  font-size: 62.5%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container{
+  position: relative;
+}
+body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 1s;
+  -webkit-transition: background-color 1s;
+  -moz-transition: background-color 1s;
+  -ms-transition: background-color 1s;
+  -o-transition: background-color 1s;
+}
+.dark{
+  background-color: black;
+}
+.sun, .moon{
+  font-size: 10rem;
+  width: fit-content;
+  height: fit-content;
+}
+.moon{
+  position:absolute;
+  inset: 0;
+}
+.moon-logo{
+  opacity: 0;
+  transform: translateY(20%) rotateZ(50deg);
+  -webkit-transform: translateY(20%) rotateZ(50deg);
+  -moz-transform: translateY(20%) rotateZ(50deg);
+  -ms-transform: translateY(20%) rotateZ(50deg);
+  -o-transform: translateY(20%) rotateZ(50deg);
+  transition: all 1s ease-out;
+  -webkit-transition: all 1s ease-out;
+  -moz-transition: all 1s ease-out;
+  -ms-transition: all 1s ease-out;
+  -o-transition: all 1s ease-out;
+}
+.sun-logo{
+  opacity: 1;
+  transform: translateY(0) rotateZ(0deg);
+  -webkit-transform: translateY(0) rotateZ(0deg);
+  -moz-transform: translateY(0) rotateZ(0deg);
+  -ms-transform: translateY(0) rotateZ(0deg);
+  -o-transform: translateY(0) rotateZ(0deg);
+}
+.animate-sun{
+  opacity: 0;
+  transform: translateY(20%) rotateZ(100deg);
+  -webkit-transform: translateY(20%) rotateZ(100deg);
+  -moz-transform: translateY(20%) rotateZ(100deg);
+  -ms-transform: translateY(20%) rotateZ(100deg);
+  -o-transform: translateY(20%) rotateZ(100deg);
+}
+.animate-moon{
+  opacity: 1;
+  transform: translateY(0%) rotateZ(0deg);
+  -webkit-transform: translateY(0%) rotateZ(0deg);
+  -moz-transform: translateY(0%) rotateZ(0deg);
+  -ms-transform: translateY(0%) rotateZ(0deg);
+  -o-transform: translateY(0%) rotateZ(0deg);
+}
+.animate-moon path{
+  fill: white;
+}
+.animate-sun path{
+  fill: white;
+}
